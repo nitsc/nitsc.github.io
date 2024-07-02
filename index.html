@@ -37,43 +37,6 @@
     
     <h5>如果你想加入NITSC，你需要有一定的计算机或编程知识。NITSC QQ 地址：875026309</h5>
 
-    <!-- 记录和展示访客IP属地的示例代码 -->
-    <script type="text/javascript">
-        // 记录访客IP和属地信息
-        function recordVisitorIP(ip, location) {
-            var visitedIPs = JSON.parse(localStorage.getItem('visitedIPs')) || [];
-            visitedIPs.push({ ip: ip, location: location });
-            localStorage.setItem('visitedIPs', JSON.stringify(visitedIPs));
-        }
-
-        // 展示记录的IP属地信息
-        function showRecordedIPs() {
-            var visitedIPs = JSON.parse(localStorage.getItem('visitedIPs')) || [];
-            var ipList = document.getElementById('ipList');
-            ipList.innerHTML = ''; // 清空原有内容
-            visitedIPs.forEach(function(entry) {
-                var li = document.createElement('li');
-                li.textContent = entry.ip + ' - ' + entry.location;
-                ipList.appendChild(li);
-            });
-        }
-    </script>
-
-    <!-- 获取IP地址和属地信息的方法 -->
-    <script type="text/javascript">
-        function getIPInfo(json) {
-            var ip = json.ip;
-            var location = json.province + json.city; // 这里示例简化为省和市，您可以根据需要修改
-            recordVisitorIP(ip, location); // 调用记录IP和属地信息的函数
-            showRecordedIPs(); // 调用展示记录的IP属地信息的函数
-        }
-    </script>
-    <script type="text/javascript" src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
-    
-    <!-- 显示IP属地信息的列表 -->
-    <h3>访客IP属地信息：</h3>
-    <ul id="ipList"></ul>
-
 
     <h6>2024 Copyright© NITSC, Dean of NITSC， 周**</h6>
 </body>

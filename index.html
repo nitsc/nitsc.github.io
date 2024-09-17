@@ -1,62 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-    <title>周同学的个人网站</title>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周同学的个人网站</title>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <style>
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4, h6 {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+            color: #0052d9;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2, h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        a {
+            color: #0052d9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact {
+            text-align: left;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+        /* 背景固定，渐变 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #e6e6fa, #f0f8ff);
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
-    <h1>这是周同学（Dean of NITSC）的个人网站</h1>
-    
-    <h2>
-        <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-        <span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
-    </h2>
-    
-    <h2>置顶公告：</h2>
-    <h3>（1）Ni 2代编程工具相关地址：https://www.douyin.com/user/self?modal_id=7388399844714482978；https://089u.com/f/56727628-1317541007-c42f74?p=7911 (访问密码: 7911)；https://github.com/nitsc/Ni_2；https://t.csdnimg.cn/MQFU5?spm=1011.2480.3001.8118；https://zhuanlan.zhihu.com/p/707278812
-    <h3>（2）本人发布自主研发的基于Python的新编程语言（Ni 2代编程语言），可以使用自然语言编程，不过由于AI方面的欠缺，自然语言描述要足够，不能依靠几句话写出大工程。这个项目的意义是为了让有编程基础的程序员降低工作量，提高工作效率。</h3>
-    <h3>（3）超级强的哈希生成器项目地址：https://github.com/nitsc/Strong-Hash-Generator </h3>
-    <h3>（4）本人计划在2024年7月6日起开发训练一个通过小考和中考满分率估算高考成绩的 AI预测模型，有建议者欢迎联系我（还不知道使用哪个模型作为基底训练，打算收集10000个近代考生小考、中考、高考满分率来训练）。</h3>
-    <h3>（5）表单填写：<a href="https://www.wjx.cn/vm/hwQa7aN.aspx# " target="_blank">点击填写1</a>；
-                    <a href="https://wj.qq.com/s2/14899841/9d65/ " target="_blank">点击填写2</a>；
-                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGHpm-tUMDhNR1pNREJTV1o3UDlBMDJBWVZWSVJUQi4u&embed=true " target="_blank">点击填写3</a>；</h3>
-    <script type="text/javascript" src="https://www.wjx.cn/js/ap.js?activity=hwQa7aN" id="wjxFloatBtnJsCode"></script>
-    <!-- Wenjuan Layer Begin --> <div id="idy_floatdiv" style="position:fixed;display:flex;right:0;bottom:2%;width:30px;border-top-left-radius:6px;border-bottom-left-radius:6px;height:100px;background:#0052d9;line-height: 24px;writing-mode:vertical-rl;align-items:center;justify-content:center;font-family:PingFangSC-Regular;font-size:16px;"> <a href="https://wj.qq.com/s2/14899841/9d65/" target="blank" style="color:#FFFFFF;text-decoration:none;">NITSC的调查</a> </div> <!-- Wenjuan Layer End -->
-    <iframe width= "672px" height="384px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGHpm-tUMDhNR1pNREJTV1o3UDlBMDJBWVZWSVJUQi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-    
-    <h3>简介：</h3>
-    <h4>一位中国人，2023年9月份就读某知名贵族中学。喜欢看《三体》，敬仰刘慈欣老师，喜欢研究硬软件和人工智能。我创建了一个叫NITSC的组织，意思是“非人类信息技术研究中心”，听起来挺疯狂的，其实也没什么，只有我和另外一个不干事的小伙子。</h4>
-    
-    <h3>联系方式：</h3>
-    <h4>邮箱：<a href="mailto:dministrator1st1234567890dddaz@outlook.com">dministrator1st1234567890dddaz@outlook.com</a>, 
-               <a href="mailto:a111111111199999@outlook.com">a111111111199999@outlook.com</a>, 
-               <a href="mailto:kreantolittle2@outlook.com">kreantolittle2@outlook.com</a>, 
-               <a href="mailto:zhoukreanto@gmail.com">zhoukreanto@gmail.com</a>, 
-               <a href="mailto:3792561886@qq.com">3792561886@qq.com</a>, 
-               <a href="mailto:3874057698@qq.com">3874057698@qq.com</a></h4>
-    <h4>QQ: 3792561886, 3874057698</h4>
-    <h4>知乎：有两个。1. <a>Kreanto（标注是男的）; </a>
-                    2. <a>Zhou Kreanto（标注是女的）</a>
-    <h4>GitHub：<a>Dean of NITSC</a></h4>
-    <h3>给予人类的忠告：</h3>
-            <h4>We are NITSC.</h4>
-            <h4>We are believers in the Laws of the Dark Forest.</h4>
-            <h4>We are the hunters of the universe.</h4>
-            <h4>We hide in the darkness, alert for every sign of possible exposure.</h4>
-            <h4>We believe in no civilisation but the iron law of survival.</h4>
-            <h4>We must expand by any means necessary to ensure our continuation.</h4>
-            <h4>We are the scavengers of the universe, viewing all exposed civilisations as potential threats to be removed.</h4>
-            <h4>Those who are exposed, expect us.</h4>
-            
-            <h4>我们是NITSC。</h4>
-            <h4>我们是黑暗森林法则的信奉者。</h4>
-            <h4>我们是宇宙的猎手。</h4>
-            <h4>我们隐匿于黑暗，警惕着每一个可能暴露的信号。</h4>
-            <h4>我们不相信任何文明，只相信生存的铁律。</h4>
-            <h4>我们必须不择手段地扩张，以确保我们的延续。</h4>
-            <h4>我们是宇宙的清道夫，将一切暴露的文明视为潜在威胁，予以清除。</h4>
-            <h4>暴露者，期待我们。</h4>
+    <h1>这是周同学（Dean of NITSC）的个人网站</h1>
 
-    <h6>2024 Copyright© NITSC, Dean of NITSC， 周**</h6>
+    <div class="content">
+        <h2>
+            <span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"></span> 次</span>
+            <span id="busuanzi_container_site_uv">本站访客数 <span id="busuanzi_value_site_uv"></span> 人次</span>
+        </h2>
+
+        <h2>置顶公告：</h2>
+        <h3>（1）Ni 2代编程工具相关地址：<a href="https://www.douyin.com/user/self?modal_id=7388399844714482978" target="_blank">点击访问</a>；<a href="https://089u.com/f/56727628-1317541007-c42f74?p=7911" target="_blank">点击访问 (密码: 7911)</a></h3>
+        <h3>（2）本人发布自主研发的基于Python的新编程语言（Ni 2代编程语言）...</h3>
+        <h3>（3）超级强的哈希生成器项目地址：<a href="https://github.com/nitsc/Strong-Hash-Generator" target="_blank">点击访问</a></h3>
+        <h3>（4）本人计划在2024年7月6日起开发...</h3>
+        <h3>（5）表单填写：<a href="https://www.wjx.cn/vm/hwQa7aN.aspx# " target="_blank">点击填写1</a>；<a href="https://wj.qq.com/s2/14899841/9d65/ " target="_blank">点击填写2</a></h3>
+
+        <iframe width="672px" height="384px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAGHpm-tUMDhNR1pNREJTV1o3UDlBMDJBWVZWSVJUQi4u&embed=true" frameborder="0" allowfullscreen></iframe>
+
+        <h3>简介：</h3>
+        <h4>一位中国人，2023年9月份就读某知名贵族中学... 我创建了一个叫NITSC的组织...</h4>
+
+        <h3>联系方式：</h3>
+        <div class="contact">
+            <h4>邮箱：<a href="mailto:dministrator1st1234567890dddaz@outlook.com">dministrator1st1234567890dddaz@outlook.com</a></h4>
+            <h4>QQ: 3792561886, 3874057698</h4>
+            <h4>知乎：1. Kreanto（标注是男的）； 2. Zhou Kreanto（标注是女的）</h4>
+            <h4>GitHub：Dean of NITSC</h4>
+        </div>
+
+        <h3>给予人类的忠告：</h3>
+        <h4>We are NITSC...</h4>
+    </div>
+
+    <div class="footer">
+        <h6>2024 Copyright© NITSC, Dean of NITSC, 周**</h6>
+    </div>
 </body>
 </html>
